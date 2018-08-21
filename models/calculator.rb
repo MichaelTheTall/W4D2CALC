@@ -1,8 +1,8 @@
 class Calculator
 
   def initialize(num1, num2)
-    @num1 = num1
-    @num2 = num2
+    @num1 = num1.to_f
+    @num2 = num2.to_f
   end
 
   def add
@@ -14,7 +14,7 @@ class Calculator
   end
 
   def multiply
-    return @num1 * @num2 
+    return @num1 * @num2
   end
 
   def divide
